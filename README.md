@@ -1,7 +1,5 @@
-# Credit-card-fraud-analysis
-End-to-end fraud detection using SQL and Python with behavioral insights
-
 # 💳 Credit Card Fraud Detection & Analysis
+End-to-end fraud detection using SQL,Python, and Machine Learning with behavioral insights
 
 ## 📊 Overview
 This project analyzes 284,000+ credit card transactions to identify fraud patterns using SQL and Python.
