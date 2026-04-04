@@ -7,12 +7,25 @@ This project analyzes 284,000+ credit card transactions to identify fraud patter
 ## 🛠️ Tools & Technologies
 - Python (Pandas, Scikit-learn)
 - SQL (PostgreSQL)
-- Machine Learning (Logistic Regression)
+- Machine Learning (Logistic Regression, Decision Tree)
 
 ## 🎯 Objectives
 - Detect fraudulent transactions
 - Understand fraud behavior patterns
-- Generate business insights for fraud prevention
+- Compare ML models for fraud detection performance
+
+##⚙️ **Methodology**
+-Data preprocessing and feature analysis
+-Handling class imbalance using class_weight='balanced'
+-Model building: Logistic Regression & Decision Tree
+-Model evaluation using precision, recall, and confusion matrix
+-SQL-based analysis for behavioral insights
+
+##📈**Model Comparison**
+-Decision Tree: Higher recall → detects more fraud but increases false positives
+-Logistic Regression: Better balance of precision and recall → more reliable
+
+👉 Final choice: Logistic Regression due to stability and lower false alarm rate
 
 ## 📈 Key Insights
 - Fraud is NOT concentrated in high-value transactions
@@ -22,17 +35,19 @@ This project analyzes 284,000+ credit card transactions to identify fraud patter
 - High-value transactions are mostly legitimate
 
 ## 🧠 Techniques Used
-- Logistic Regression model for classification
-- Window functions (LAG, RANK, cumulative SUM)
-- Time-based analysis
-- Anomaly detection using SQL
 
-## 📊 Model Performance
+- Logistic Regression & Decision Tree for classification
+- Model evaluation using precision, recall, and confusion matrix
+- Window functions (LAG, RANK, cumulative SUM) for behavioral analysis
+- Time-based fraud pattern analysis
+- SQL-based anomaly detection
 
-- Accuracy: ~94–95%
-- Evaluated using confusion matrix and classification report
-- Balanced performance on both fraud and non-fraud classes
-- Addressed class imbalance using appropriate techniques
+## 📊 Model Performance & Comparison
+
+- Logistic Regression achieved balanced precision and recall, making it more reliable for fraud detection
+- Decision Tree showed higher recall but introduced more false positives
+- Evaluated models using classification report and confusion matrix
+- Addressed class imbalance using class_weight='balanced'
 
 ## 📂 Project Structure
 - `credit_card_fraud_detection.ipynb` → Python model
