@@ -14,18 +14,20 @@ This project analyzes 284,000+ credit card transactions to identify fraud patter
 - Understand fraud behavior patterns
 - Compare ML models for fraud detection performance
 
-##⚙️ **Methodology**
--Data preprocessing and feature analysis
--Handling class imbalance using class_weight='balanced'
--Model building: Logistic Regression & Decision Tree
--Model evaluation using precision, recall, and confusion matrix
--SQL-based analysis for behavioral insights
+## ⚙️ Methodology
 
-##📈**Model Comparison**
--Decision Tree: Higher recall → detects more fraud but increases false positives
--Logistic Regression: Better balance of precision and recall → more reliable
+- Performed data preprocessing and feature analysis on transaction dataset  
+- Handled class imbalance using `class_weight='balanced'`  
+- Built classification models: Logistic Regression and Decision Tree  
+- Evaluated models using precision, recall, and confusion matrix  
+- Conducted SQL-based behavioral analysis to identify fraud patterns  
 
-👉 Final choice: Logistic Regression due to stability and lower false alarm rate
+## 📊 Model Comparison
+
+- **Decision Tree:** Higher recall → detects more fraud but increases false positives  
+- **Logistic Regression:** Better balance of precision and recall → more reliable  
+
+👉 **Final Choice:** Logistic Regression due to better generalization and lower false alarm rate  
 
 ## 📈 Key Insights
 - Fraud is NOT concentrated in high-value transactions
